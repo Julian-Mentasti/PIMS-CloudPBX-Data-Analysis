@@ -4,3 +4,16 @@ http://workshop.bcdata.ca/2018/#about "BCData Home Page") which is a week long w
 
 This repo is a culmination of the work I completed during this workshop. I would definitely have to note that this is product of the collaboration between all my team members during the event ([stefanhannie](https://github.com/stefanhannie),[imachuca24](https://github.com/imachuca24),[mlardadji](https://github.com/mlardadji),[eclam](https://github.com/eclam),[jackiexu007](https://github.com/jackiexu007) and [clm222](https://github.com/clm222) and with the expertise of our supervisors ([mattfung](https://github.com/mattfung) and [grahamsnz](https://github.com/gragamsnz)). There is some work that is absent here, but if you are so inclined feel free to look at the [master repo](https://github.com/mattfung/pims-bcdata18-cloudpbx "Master Mess").
 
+### Tools & Libraries Used:
+- Jupyter notebooks hosted by BCData
+- Python 3.6
+- Dask 
+- Pandas
+- Numpy
+- Matplotlib
+- Geolite
+- scipy
+
+### Tools & Libraries that require further implementation towards this project:
+- xtensor
+- Boost.python
