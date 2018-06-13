@@ -12,6 +12,7 @@ This repo is a culmination of the work I completed during this workshop. I would
 - Numpy
 - Matplotlib
 - Geolite
+- GeoIP2
 - scipy
 
 ### Tools & Libraries that require further implementation towards this project:
