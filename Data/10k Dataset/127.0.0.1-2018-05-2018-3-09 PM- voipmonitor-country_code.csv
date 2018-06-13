@@ -1,0 +1,268 @@
+"id","parent_id","code","type","name","latitude","longitude"
+1,NULL,"--","continent","--",NULL,NULL
+2,1,"A1","country","Anonymous Proxy",NULL,NULL
+3,1,"A2","country","Satellite Provider",NULL,NULL
+4,NULL,"EU","continent","Europe",NULL,NULL
+5,4,"AD","country","Andorra",42.5063,1.5218
+6,NULL,"AS","continent","Asia",NULL,NULL
+7,6,"AE","country","United Arab Emirates",23.4241,53.8478
+8,6,"AF","country","Afghanistan",33.9391,67.71
+9,NULL,"NA","continent","North America",NULL,NULL
+10,9,"AG","country","Antigua and Barbuda",17.0608,-61.7964
+11,9,"AI","country","Anguilla",18.2206,-63.0686
+12,4,"AL","country","Albania",41.1533,20.1683
+13,6,"AM","country","Armenia",40.0691,45.0382
+14,NULL,"AF","continent","Africa",NULL,NULL
+15,14,"AO","country","Angola",-11.2027,17.8739
+16,6,"AP","country","Asia/Pacific Region",40.799,117.612
+17,NULL,"AN","continent","Antarctica",NULL,NULL
+18,17,"AQ","country","Antarctica",-82.8628,135
+19,NULL,"SA","continent","South America",NULL,NULL
+20,19,"AR","country","Argentina",-38.4161,-63.6167
+21,NULL,"OC","continent","Oceania",NULL,NULL
+22,21,"AS","country","American Samoa",-14.271,-170.132
+23,4,"AT","country","Austria",47.5162,14.5501
+24,21,"AU","country","Australia",-25.2744,133.775
+25,9,"AW","country","Aruba",12.5211,-69.9683
+26,4,"AX","country","Aland Islands",60.1785,19.9156
+27,6,"AZ","country","Azerbaijan",40.1431,47.5769
+28,4,"BA","country","Bosnia and Herzegovina",43.9159,17.6791
+29,9,"BB","country","Barbados",13.1939,-59.5432
+30,6,"BD","country","Bangladesh",23.685,90.3563
+31,4,"BE","country","Belgium",50.5039,4.46994
+32,14,"BF","country","Burkina Faso",12.2383,-1.56159
+33,4,"BG","country","Bulgaria",42.7339,25.4858
+34,6,"BH","country","Bahrain",26.0667,50.5577
+35,14,"BI","country","Burundi",-3.37306,29.9189
+36,14,"BJ","country","Benin",9.30769,2.31583
+37,9,"BL","country","Saint Bartelemey",17.9,-62.8333
+38,9,"BM","country","Bermuda",32.3078,-64.7505
+39,6,"BN","country","Brunei",4.53528,114.728
+40,19,"BO","country","Bolivia",-16.2902,-63.5887
+41,19,"BR","country","Brazil",-14.235,-51.9253
+42,9,"BS","country","Bahamas",25.0343,-77.3963
+43,6,"BT","country","Bhutan",27.5142,90.4336
+44,17,"BV","country","Bouvet Island",-54.4208,3.34645
+45,14,"BW","country","Botswana",-22.3285,24.6849
+46,4,"BY","country","Belarus",53.7098,27.9534
+47,9,"BZ","country","Belize",17.1899,-88.4977
+48,9,"CA","country","Canada",56.1304,-106.347
+49,6,"CC","country","Cocos Islands",-12.1642,96.871
+50,14,"CD","country","Democratic Republic of the Congo",-2.82101,23.4573
+51,14,"CF","country","Central African Republic",6.61111,20.9394
+52,14,"CG","country","Republic of the Congo",-0.228021,15.8277
+53,14,"CI","country","Cote d'Ivoire",7.53999,-5.54708
+54,21,"CK","country","Cook Islands",-21.2367,-159.778
+55,19,"CL","country","Chile",-35.6751,-71.543
+56,14,"CM","country","Cameroon",7.36972,12.3547
+57,6,"CN","country","China",35.8617,104.195
+58,19,"CO","country","Colombia",4.57087,-74.2973
+59,9,"CR","country","Costa Rica",9.74892,-83.7534
+60,9,"CU","country","Cuba",21.5218,-77.7812
+61,14,"CV","country","Cape Verde",16.5388,-23.0418
+62,6,"CX","country","Christmas Island",-10.4475,105.69
+63,6,"CY","country","Cyprus",35.1264,33.4299
+64,4,"CZ","country","Czech Republic",49.8175,15.473
+65,4,"DE","country","Germany",51.1657,10.4515
+66,14,"DJ","country","Djibouti",11.8251,42.5903
+67,4,"DK","country","Denmark",56.2639,9.50179
+68,9,"DM","country","Dominica",15.415,-61.371
+69,9,"DO","country","Dominican Republic",18.7357,-70.1627
+70,14,"DZ","country","Algeria",28.0339,1.65963
+71,19,"EC","country","Ecuador",-1.83124,-78.1834
+72,4,"EE","country","Estonia",58.5953,25.0136
+73,14,"EG","country","Egypt",26.8206,30.8025
+74,14,"EH","country","Western Sahara",24.2155,-12.8858
+75,14,"ER","country","Eritrea",15.1794,39.7823
+76,4,"ES","country","Spain",40.4637,-3.74922
+77,14,"ET","country","Ethiopia",9.145,40.4897
+78,4,"EU","country","Europe",49.6599,14.4959
+79,4,"FI","country","Finland",61.9241,25.7482
+80,21,"FJ","country","Fiji",-17.7134,178.065
+81,19,"FK","country","Falkland Islands",-51.7963,-59.5236
+82,21,"FM","country","Federated States of Micronesia",7.42555,150.551
+83,4,"FO","country","Faroe Islands",61.8926,-6.91181
+84,4,"FR","country","France",46.2276,2.21375
+85,14,"GA","country","Gabon",-0.803689,11.6094
+86,4,"GB","country","United Kingdom",55.3781,-3.43597
+87,9,"GD","country","Grenada",12.1165,-61.679
+88,6,"GE","country","Georgia",42.0539,43.8783
+89,19,"GF","country","French Guiana",3.93389,-53.1258
+90,4,"GG","country","Guernsey",49.4657,-2.58528
+91,14,"GH","country","Ghana",7.94653,-1.02319
+92,4,"GI","country","Gibraltar",36.1408,-5.35358
+93,9,"GL","country","Greenland",71.7069,-42.6043
+94,14,"GM","country","Gambia",13.4432,-15.3101
+95,14,"GN","country","Guinea",9.94559,-9.69664
+96,9,"GP","country","Guadeloupe",16.265,-61.551
+97,14,"GQ","country","Equatorial Guinea",1.6508,10.2679
+98,4,"GR","country","Greece",39.0742,21.8243
+99,17,"GS","country","South Georgia and the South Sandwich Islands",-54.4296,-36.5879
+100,9,"GT","country","Guatemala",15.7835,-90.2308
+101,21,"GU","country","Guam",13.4443,144.794
+102,14,"GW","country","Guinea-Bissau",11.8037,-15.1804
+103,19,"GY","country","Guyana",4.86042,-58.9302
+104,6,"HK","country","Hong Kong",22.3964,114.109
+105,17,"HM","country","Heard Island and McDonald Islands",-53.0818,73.5042
+106,9,"HN","country","Honduras",15.2,-86.2419
+107,4,"HR","country","Croatia",45.1,15.2
+108,9,"HT","country","Haiti",18.9712,-72.2852
+109,4,"HU","country","Hungary",47.1625,19.5033
+110,4,"CH","country","Switzerland",46.8182,8.22751
+111,6,"ID","country","Indonesia",-0.789275,113.921
+112,4,"IE","country","Ireland",53.3312,-7.86852
+113,6,"IL","country","Israel",31.0461,34.8516
+114,4,"IM","country","Isle of Man",54.2361,-4.54806
+115,6,"IN","country","India",20.5937,78.9629
+116,6,"IO","country","British Indian Ocean Territory",-6.34319,71.8765
+117,6,"IQ","country","Iraq",33.2232,43.6793
+118,6,"IR","country","Iran",32.4279,53.688
+119,4,"IS","country","Iceland",64.9631,-19.0208
+120,4,"IT","country","Italy",41.8719,12.5674
+121,4,"JE","country","Jersey",49.2144,-2.13125
+122,9,"JM","country","Jamaica",18.1096,-77.2975
+123,6,"JO","country","Jordan",30.5852,36.2384
+124,6,"JP","country","Japan",36.2048,138.253
+125,14,"KE","country","Kenya",-0.023559,37.9062
+126,6,"KG","country","Kyrgyzstan",41.2044,74.7661
+127,6,"KH","country","Cambodia",12.5657,104.991
+128,21,"KI","country","Kiribati",-3.37042,-168.734
+129,14,"KM","country","Comoros",-11.6455,43.3333
+130,9,"KN","country","Saint Kitts and Nevis",17.3578,-62.783
+131,6,"KP","country","North Korea",40.3399,127.51
+132,6,"KR","country","South Korea",35.9078,127.767
+133,6,"KW","country","Kuwait",29.3117,47.4818
+134,9,"KY","country","Cayman Islands",19.3133,-81.2546
+135,6,"KZ","country","Kazakhstan",48.0196,66.9237
+136,6,"LA","country","Laos",19.8563,102.495
+137,6,"LB","country","Lebanon",33.8547,35.8623
+138,9,"LC","country","Saint Lucia",13.9094,-60.9789
+139,4,"LI","country","Liechtenstein",47.166,9.55537
+140,6,"LK","country","Sri Lanka",7.87305,80.7718
+141,14,"LR","country","Liberia",6.42805,-9.4295
+142,14,"LS","country","Lesotho",-29.61,28.2336
+143,4,"LT","country","Lithuania",55.1694,23.8813
+144,4,"LU","country","Luxembourg",49.8153,6.12958
+145,4,"LV","country","Latvia",56.8796,24.6032
+146,14,"LY","country","Libya",26.3351,17.2283
+147,14,"MA","country","Morocco",31.7917,-7.09262
+148,4,"MC","country","Monaco",43.7384,7.42462
+149,4,"MD","country","Moldova",47.4116,28.3699
+150,4,"ME","country","Montenegro",42.7087,19.3744
+151,9,"MF","country","Saint Martin",18.0719,-63.0523
+152,14,"MG","country","Madagascar",-18.7669,46.8691
+153,21,"MH","country","Marshall Islands",7.13147,171.184
+154,4,"MK","country","Macedonia",41.6086,21.7453
+155,14,"ML","country","Mali",17.5707,-3.99617
+156,6,"MM","country","Myanmar",21.9162,95.956
+157,6,"MN","country","Mongolia",46.8625,103.847
+158,6,"MO","country","Macao",22.1987,113.544
+159,21,"MP","country","Northern Mariana Islands",15.0979,145.674
+160,9,"MQ","country","Martinique",14.6415,-61.0242
+161,14,"MR","country","Mauritania",21.0079,-10.9408
+162,9,"MS","country","Montserrat",16.7425,-62.1874
+163,4,"MT","country","Malta",35.9375,14.3754
+164,14,"MU","country","Mauritius",-20.3484,57.5522
+165,6,"MV","country","Maldives",3.20278,73.2207
+166,14,"MW","country","Malawi",-13.2543,34.3015
+167,9,"MX","country","Mexico",23.6345,-102.553
+168,6,"MY","country","Malaysia",4.21048,101.976
+169,14,"MZ","country","Mozambique",-18.6657,35.5296
+170,14,"NA","country","Namibia",-22.9576,18.4904
+171,21,"NC","country","New Caledonia",-20.9043,165.618
+172,14,"NE","country","Niger",17.6078,8.08167
+173,21,"NF","country","Norfolk Island",-29.0408,167.955
+174,14,"NG","country","Nigeria",9.082,8.67528
+175,9,"NI","country","Nicaragua",12.8654,-85.2072
+176,4,"NL","country","Netherlands",52.1326,5.29127
+177,4,"NO","country","Norway",60.472,8.46895
+178,6,"NP","country","Nepal",28.3949,84.124
+179,21,"NR","country","Nauru",-0.522778,166.932
+180,21,"NU","country","Niue",-19.0544,-169.867
+181,21,"NZ","country","New Zealand",-40.9006,174.886
+182,1,"O1","country","Other Country",NULL,NULL
+183,6,"OM","country","Oman",21.4735,55.9754
+184,9,"PA","country","Panama",8.53798,-80.7821
+185,19,"PE","country","Peru",-9.18997,-75.0152
+186,21,"PF","country","French Polynesia",-17.6797,-149.407
+187,21,"PG","country","Papua New Guinea",-6.31499,143.956
+188,6,"PH","country","Philippines",12.8797,121.774
+189,6,"PK","country","Pakistan",30.3753,69.3451
+190,4,"PL","country","Poland",51.9194,19.1451
+191,9,"PM","country","Saint Pierre and Miquelon",46.8852,-56.3159
+192,21,"PN","country","Pitcairn",-24.3768,-128.324
+193,9,"PR","country","Puerto Rico",18.2208,-66.5901
+194,6,"PS","country","Palestine",31.9522,35.2332
+195,4,"PT","country","Portugal",39.3999,-8.22445
+196,21,"PW","country","Palau",7.51498,134.583
+197,19,"PY","country","Paraguay",-23.4425,-58.4438
+198,6,"QA","country","Qatar",25.3548,51.1839
+199,14,"RE","country","Reunion",-21.1151,55.5364
+200,4,"RO","country","Romania",45.9432,24.9668
+201,4,"RS","country","Serbia",44.0165,21.0059
+202,4,"RU","country","Russian Federation",61.524,105.319
+203,14,"RW","country","Rwanda",-1.94028,29.8739
+204,6,"SA","country","Saudi Arabia",23.8859,45.0792
+205,21,"SB","country","Solomon Islands",-9.64571,160.156
+206,14,"SC","country","Seychelles",-4.67957,55.492
+207,14,"SD","country","Sudan",12.8628,30.2176
+208,4,"SE","country","Sweden",60.1282,18.6435
+209,6,"SG","country","Singapore",1.35208,103.82
+210,14,"SH","country","Saint Helena",-15.965,-5.70892
+211,4,"SI","country","Slovenia",46.1512,14.9955
+212,4,"SJ","country","Svalbard and Jan Mayen",77.5536,23.6703
+213,4,"SK","country","Slovakia",48.669,19.699
+214,14,"SL","country","Sierra Leone",8.46056,-11.7799
+215,4,"SM","country","San Marino",43.9424,12.4578
+216,14,"SN","country","Senegal",14.4974,-14.4524
+217,14,"SO","country","Somalia",5.15215,46.1996
+218,19,"SR","country","Suriname",3.91931,-56.0278
+219,14,"ST","country","Sao Tome and Principe",0.18636,6.61308
+220,9,"SV","country","El Salvador",13.7942,-88.8965
+221,6,"SY","country","Syria",34.8021,38.9968
+222,14,"SZ","country","Swaziland",-26.5225,31.4659
+223,9,"TC","country","Turks and Caicos Islands",21.694,-71.7979
+224,14,"TD","country","Chad",15.4542,18.7322
+225,17,"TF","country","French Southern Territories",-49.2804,69.3486
+226,14,"TG","country","Togo",8.61954,0.824782
+227,6,"TH","country","Thailand",15.87,100.993
+228,6,"TJ","country","Tajikistan",38.861,71.2761
+229,21,"TK","country","Tokelau",-9.2002,-171.848
+230,6,"TL","country","Timor-Leste",-8.87422,125.728
+231,6,"TM","country","Turkmenistan",38.9697,59.5563
+232,14,"TN","country","Tunisia",33.8869,9.5375
+233,21,"TO","country","Tonga",-21.179,-175.198
+234,4,"TR","country","Turkey",38.9637,35.2433
+235,9,"TT","country","Trinidad and Tobago",10.6918,-61.2225
+236,21,"TV","country","Tuvalu",-7.10954,177.649
+237,6,"TW","country","Taiwan",23.6978,120.961
+238,14,"TZ","country","Tanzania",-6.36903,34.8888
+239,4,"UA","country","Ukraine",48.3794,31.1656
+240,14,"UG","country","Uganda",1.37333,32.2903
+241,21,"UM","country","United States Minor Outlying Islands",19.2823,166.647
+242,9,"US","country","United States",37.0902,-95.7129
+243,19,"UY","country","Uruguay",-32.5228,-55.7658
+244,6,"UZ","country","Uzbekistan",41.3775,64.5853
+245,4,"VA","country","Vatican",41.9029,12.4534
+246,9,"VC","country","Saint Vincent and the Grenadines",12.9843,-61.2872
+247,19,"VE","country","Venezuela",6.42375,-66.5897
+248,9,"VG","country","British Virgin Islands",18.4207,-64.64
+249,9,"VI","country","U.S. Virgin Islands",18.3358,-64.8963
+250,6,"VN","country","Vietnam",14.0583,108.277
+251,21,"VU","country","Vanuatu",-15.3767,166.959
+252,21,"WF","country","Wallis and Futuna",-14.2938,-178.117
+253,21,"WS","country","Samoa",-13.759,-172.105
+254,6,"YE","country","Yemen",15.5527,48.5164
+255,14,"YT","country","Mayotte",-12.8275,45.1662
+256,14,"ZA","country","South Africa",-30.5595,22.9375
+257,14,"ZM","country","Zambia",-13.1339,27.8493
+258,14,"ZW","country","Zimbabwe",-19.0154,29.1549
+259,21,"BQ","country","Caribbean Netherlands",12.1784,-68.2385
+260,21,"CW","country","Curacao",12.1696,-68.99
+261,14,"SS","country","South Sudan",6.87699,31.307
+262,21,"SX","country","Sint Maarten",18.0425,-63.0548
+263,6,"AB","country","Abkhazia",43.1674,41.1105
+264,6,"MD-SN","country","Transnitria",47.4499,29.2239
+265,6,"RU-SE","country","South Ossetia",42.4263,44.0844
+266,4,"XK","country","Kosovo",42.6026,20.903
+267,9,"X1","country","Non Geographic",NULL,NULL
