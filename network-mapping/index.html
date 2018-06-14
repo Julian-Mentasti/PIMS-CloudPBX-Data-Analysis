@@ -39,7 +39,7 @@ circle {
   </head>
   <body>
     <h2>
-      <span>U.S. commercial airports</span>, 2008<br>
+      <span>Callers</span>, 2008<br>
       great arcs and symbol map
     </h2>
     <div style="position:absolute;bottom:0;font-size:18px;">
@@ -80,7 +80,7 @@ d3.select("input[type=checkbox]").on("change", function() {
   cells.classed("voronoi", this.checked);
 });
 
-d3.json("us-states.json", function(collection) {
+d3.json("countries.geo.json", function(collection) { //TODO
   states.selectAll("path")
       .data(collection.features)
     .enter().append("svg:path")
