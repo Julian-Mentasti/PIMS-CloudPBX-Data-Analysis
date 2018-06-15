@@ -6,6 +6,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="pims-bcdata18-cloudpbx" />
+    <orderEntry type="module" module-name="learning" />
+    <orderEntry type="library" name="topojson.v0" level="application" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

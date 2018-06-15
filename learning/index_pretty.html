@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="slidecontainer">
+        <label for="myRange"></label><input type="range" min="0.25" max="5" value="2" class="slider" id="myRange">
+    <p>Value: <span id="demo"></span></p>
+    </div>
+
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/topojson.v0.min.js"></script>
+    <script>
+        let width = 960,
+            height = 500;
+
+        let projection = d3.geo.mercator()
+            .center([0, 5 ])
+            .scale(200)
+            .rotate([-180,0]);
+
+        let svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        let cells = svg.append("svg:g")
+            .attr("id", "cells");
+
+        let path = d3.geo.path()
+            .projection(projection);
+
+        let g = svg.append("g");
+
+        // load and display the World
+        d3.json("world-110m2.json", function(error, topology) {
+
+            // load and display the cities
+            d3.csv("cities.csv", function(error, data) {
+                g.selectAll("circle")
+                   .data(data)
+                   .enter()
+                   .append("a")
+                              .attr("xlink:href", function(d) {
+                                  return "https://www.google.com/search?q="+d.city;}
+                              )
+                   .append("circle")
+                   .attr("cx", function(d) {
+                           return projection([d.lon, d.lat])[0];
+                   })
+                   .attr("cy", function(d) {
+                           return projection([d.lon, d.lat])[1];
+                   })
+                   .attr("r", output.innerHTML)
+                   .style("fill", "red");
+            });
+
+
+            g.selectAll("path")
+                  .data(topojson.object(topology, topology.objects.countries)
+                      .geometries)
+                .enter()
+                  .append("path")
+                  .attr("d", path)
+        });
+
+        d3.csv("10k-complete.csv", function(cityconnect) {
+            let linksByOrigin = {},
+                countByCity = {},
+                locationByCity = {},
+                positions = [];
+
+            let arc = d3.geo.greatArc()
+                .source(function (d) {
+                    return locationByCity[d.source];
+                })
+                .target(function (d) {
+                    return locationByCity[d.target];
+                });
+
+            cityconnect.forEach(function (city) {
+                let origin = city.caller_city_asn,
+                    destination = city.called_city_asn,
+                    links = linksByOrigin[origin] || (linksByOrigin[origin] = []);
+                links.push({source: origin, target: destination});
+                countByCity[origin] = (countByCity[origin] || 0) + 1;
+                countByCity[destination] = (countByCity[destination] || 0) + 1;
+            });
+
+            d3.csv("cities.csv", function (cities) {
+
+                // Only consider airports with at least one flight.
+                cities = cities.filter(function (city) {
+                    if (countByCity[city.city]) {
+                        let location = [city.lat, city.lon];
+                        locationByCity[city.city] = location;
+                        positions.push(projection(location));
+                        return true;
+                    }
+                });
+
+                let polygons = d3.geom.voronoi(positions);
+
+                let g = cells.selectAll("g")
+                    .data(cities)
+                    .enter().append("svg:g");
+
+                g.append("svg:path")
+                    .attr("class", "cell")
+                    .attr("d", function(d, i) { return "M" + polygons[i].join("L") + "Z"; })
+                    .on("mouseover", function(d, i) { d3.select("h2 span").text(d.city); });
+
+                g.selectAll("path.arc")
+                    .data(function(d) { return linksByOrigin[d.iata] || []; })
+                    .enter().append("svg:path")
+                    .attr("class", "arc")
+                    .attr("d", function(d) { return path(arc(d)); });
+
+                // circles.selectAll("circle")
+                //     .data(cities)
+                //     .enter().append("svg:circle")
+                //         .attr("cx", function(d, i) { return positions[i][0]; })
+                //         .attr("cy", function(d, i) { return positions[i][1]; })
+                //         .attr("r", function(d, i) { return Math.sqrt(countByCity[d.city]); })
+                //         .sort(function(a, b) { return countByCity[b.city] - countByCity[a.city]; });
+                    });
+        });
+        // zoom and pan
+            let zoom = d3.behavior.zoom()
+                .on("zoom", function () {
+                    g.attr("transform", "translate(" +
+                        d3.event.translate.join(",") + ")scale(" + d3.event.scale + ")");
+                    g.selectAll("circle")
+                        .attr("d", path.projection(projection));
+                    g.selectAll("path")
+                        .attr("d", path.projection(projection));
+
+                });
+
+            svg.call(zoom);
+
+            let slider = document.getElementById("myRange");
+            let output = document.getElementById("demo");
+            output.innerHTML = slider.value; // Display the default slider value
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider.oninput = function () {
+                output.innerHTML = this.value;
+                g.selectAll("circle")
+                    .attr("r", output.innerHTML);
+            }
+    </script>
+</body>
+</html>
