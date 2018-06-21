@@ -9,6 +9,9 @@
     <orderEntry type="module" module-name="pims-bcdata18-cloudpbx" />
     <orderEntry type="module" module-name="learning" />
     <orderEntry type="library" name="topojson.v0" level="application" />
+    <orderEntry type="module" module-name="Final Mapping" />
+    <orderEntry type="module" module-name="My-Website" />
+    <orderEntry type="module" module-name="My-Website" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
