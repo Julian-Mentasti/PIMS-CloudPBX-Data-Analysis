@@ -21,8 +21,6 @@ This repo is a culmination of the work I completed during this workshop. I would
 - xtensor
 - Boost.python
 
-# You can see the final mapping animation [here](http://www.mentasti.net/cloud-pbx/mapping/index.html)
-
 # File explanation: 
 
 - File Dump: there are some examples for coordinates and html pages used for the final mapping.
